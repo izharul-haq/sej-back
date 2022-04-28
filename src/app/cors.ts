@@ -3,7 +3,7 @@ import { FastifyInstance } from 'fastify';
 
 const applyCors = (server: FastifyInstance): void => {
   server.register(fastifyCors, {
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:8080'],
     methods: ['GET'],
   });
 };
